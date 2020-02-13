@@ -1,15 +1,16 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import java.util.List;
 
 @Entity
 public class Job extends AbstractEntity{
     @ManyToOne
+    @JoinColumn
     private Employer employer;
+
     private String skills;
-    private List<Job> jobs;
 
     public Job() {
     }
@@ -39,11 +40,4 @@ public class Job extends AbstractEntity{
         this.skills = skills;
     }
 
-    public List<Job> getJobs() {
-        return jobs;
-    }
-
-    public void setJobs(List<Job> jobs) {
-        this.jobs = jobs;
-    }
 }

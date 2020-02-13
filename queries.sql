@@ -9,5 +9,6 @@
     FROM techjobs
     WHERE (location = "Saint Louis")
 ## Part 3: Test it with SQL
+    DELETE FROM techjobs WHERE (job_id !== null)
 
 ## Part 4: Test it with SQL
