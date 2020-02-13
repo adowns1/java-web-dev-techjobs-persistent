@@ -5,7 +5,9 @@
     name VARCHAR(20)
     skills VARCHAR(200)
 ## Part 2: Test it with SQL
-
+    SELECT employer
+    FROM techjobs
+    WHERE (location = "Saint Louis")
 ## Part 3: Test it with SQL
 
 ## Part 4: Test it with SQL

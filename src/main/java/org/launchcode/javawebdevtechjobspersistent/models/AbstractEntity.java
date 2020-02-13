@@ -17,6 +17,8 @@ public abstract class AbstractEntity {
     @Size(min = 3, max = 100, message = "Enter Name")
     private String name;
 
+
+
     public int getId() {
         return id;
     }
