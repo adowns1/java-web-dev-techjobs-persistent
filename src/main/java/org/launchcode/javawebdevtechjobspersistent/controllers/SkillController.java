@@ -32,10 +32,8 @@ public class SkillController {
         if (errors.hasErrors()) {
             return "skills/add";
         }
-        //skillRepository.findAll();
         skillRepository.save(newSkill);
         return "skills/view";
-        //not saving- error and returning skills/add??
     }
 
     @GetMapping("view/{skillId}")
@@ -47,7 +45,7 @@ public class SkillController {
             model.addAttribute("skill", skill);
             return "skills/view";
         } else {
-            return "redirect:../";
+            return "redirect:";
         }
     }
 }
